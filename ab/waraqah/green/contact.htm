@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--  # CODED by spaider art / twitter/facebook: spaider art \ www.ba9a.com -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ar">
+
+<head>
+
+	<title>ورقة | اتصل بنا</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<!-- الكور ميتا -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+    
+	<!-- استايلات السي اس اس -->
+    <link href="css/contact.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+   	<link rel="stylesheet" href="cluer/style.css" type="text/css" />
+    
+	<!-- javascript -->
+    <script type="text/javascript" language="javascript" src="jss/custom.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.js"></script>
+	<script type="text/javascript" src="js/jquery.blackAndWhite.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/less.js"></script>
+    <script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name1: $('#name1').val(),
+			name2: $('#name2').val(),
+			service: $('#service').val(),
+			email: $('#email').val(),
+			tele: $('#tele').val(),
+			title: $('#title').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+
+
+</head>
+
+<body>
+
+
+	<!-- الهيدر -->
+    
+    
+    
+<div id="header">
+	<div class="logo">
+		<a href="index.htm">
+			<img src="img/logo.png" alt="" />
+		</a>
+	</div>
+
+	<ul>
+		    <li><a href="index.htm">الرئيسية</a></li>
+            
+             <li> <a href="prices.htm">أسعارنا</a> -</li>
+             
+		<li><a href="portfolio.htm">أعمالنا</a> -</li>
+		
+        <li class="selected">
+        <a href="contact.htm">اتصل بنا</a>  -</li>
+	</ul>
+    
+</div>
+
+<!-- #انتهى الهيدر -->
+
+  <div class="wrapper">
+  
+  <!-- صورة للصفحة -->
+  
+<div class="head-contact">
+
+اتصل بنا<br />
+<p>. دعنا نتشرف بخدمتك </p>
+</div>
+
+  <!-- #انتهى صورة للصفحة -->
+   
+   </div>
+
+
+  <!-- بداية نموذج الاتصال \\\ حساس جدا مع ملف البي اتش بي المرتبط به , لا تلمس شيئا إن لم تكن متأكدا \\\ -->
+
+  <div class="wrapper">
+      <div class="clearfix">
+<div class="row">
+      <form id="form" name="form" method="post" action="contact.php">
+      
+      
+<br />
+<br />
+<br />
+     
+       <div class="span4">
+       
+        <label>
+        <strong style="        float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;        font-family: ">: رقم هاتفك  </strong></label>
+        
+        <input type="text"  class="span4 req-string" placeholder="... رقم هاتفي صحيح" name="tele" id="required">
+        
+        <br />
+<br />
+
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">: عنوان رسالتك </strong></label>
+        <input type="text" class="span4 req-string" placeholder="... ضع عنوانا مناسبا" name="title" id="required">
+        
+        
+        </div>
+        
+        
+        
+        
+        <div class="span4">
+            
+            
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">: اسمك العائلي  </strong></label>
+        <input type="text" class="span4 req-email" placeholder="... اسمك الأخير الحقيقي " name="name2" id="required">
+        
+        <br /> <br />
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">: نوع الخدمة التي تطلبها  </strong></label>
+        <input type="text" class="span4 req-string" placeholder="... حسب تصنيفاتنا لها في رئيسية الموقع" name="service" id="required">
+        
+        </div>
+
+           <div class="span4">
+           
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">: اسمك الشخصي </strong></label>
+        <input type="text" class="span4 req-email" placeholder="... اسمك الأول الحقيقي" name="name1" id="required">
+        
+        <br /><br />
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">:  بريدك الإلكتروني</strong></label>
+        <input type="text" class="span4" placeholder="... تأكد من صحة بريدك " name="email" id="required">
+        
+        </div>
+
+
+
+        <div class="span8" style="position:relative;">
+        
+        <br />
+        <label><strong style="	 float: right;        font-size: 18px        ;color:#7a9b27;        margin-right: -10px;        text-align: right;	    margin-bottom: 8px;  font-family:  GE ss ; ">: رسالتك </strong></label>
+        <textarea class="span8 req-string" placeholder="... تكلم عن موقعك ، أو منتجك ، وأخبرنا بكل التفاصيل التي تحتاجها في خدمتك ، نحن هنا نعمل من أجلك " rows="5" id="required" name="message"></textarea>
+        <button type="submit" class="btn btn-large btn-success" id="submit"><strong style=" float: right;        color:#517476;                font-family:  GE ss ;">أرسل رسالتك</strong></button>
+       
+       </div>
+       
+        <br /> <br />
+        
+   
+        
+        
+       </form>
+      
+ </div> 
+
+
+ 
+</div>
+
+  <!-- #انتهى نموذج الاتصال -->
+
+<br />
+<br />
+<br />
+
+  <!-- بداية العناوين -->
+
+ 	<section class="contact-address clearfix">
+    	<div class="one-fourth last">
+							<strong>: العنوان رقم 1</strong><br /> <br />
+							<span>جدة , المملكة العربية السعودية</span> <br />
+							<strong><span> 00966122458</span> : رقم الهاتف</strong> 
+							 <br />
+							<strong><span> 00966122458</span> : الفاكس</strong> 
+							 <br />
+							<strong><a href="#">testmail@sitename.com</a> : البريد  </strong>
+								
+						</div>
+						<div class="one-fourth">
+							<strong>: العنوان رقم 2</strong> <br /><br />
+							<span>الدار البيضاء , المملكة المغربية</span> <br />
+							<strong><span> 002120661316937</span> : رقم الهاتف</strong> 
+							 <br />
+							<strong><span> 002120699482801</span> : الفاكس</strong> 
+							 <br />
+							<strong><a href="#">testmail@sitename.com</a> : البريد  </strong>
+                            
+						</div>
+					
+					</section>
+
+
+    <!-- #انتهى بداية العناوين -->
+
+
+			
+      
+                        
+                        
+</div>
+</div>
+
+<br />
+<br />
+<br />
+
+  <!-- #انتهى محتوى الصفحة -->
+
+
+<!-- الفوتر -->
+
+
+<div id="footer">
+	<div id="footer-inner" class="clearfix container">
+		<div id="footer-text">
+			<div class="footer-copyright">
+				<p class="top">
+					كل الحقوق محفوظة لموقع ورقة لخدمات الويب الإلكترونية . 2012 - 2013 
+				</p>
+
+				<p class="bottom">
+					جميع ما يقدمه الموقع من أفكار وخدمات هو ملك له لا نحلل الاقتباس من زواياه إلا بإذن<br />
+					مسبق من الإدارة ، يمكنك الإتصال بنا في حالة رغبتك في طلب المساعدة
+				</p>
+			</div>
+
+			<div class="footer-social">
+				<p class="top">
+				:	تواصل معنا 
+				</p>
+				<div class="clear"></div>
+
+				<a class="skype" href="#"></a>
+				<a class="inst" href="#"></a>
+				<a class="facebook" href="#"></a>
+				<a class="youtube" href="#"></a>
+				<a class="twitter" href="#"></a>
+				<a class="google" href="#"></a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+ <!-- # انتهى الفوتر -->
+
+</body>
+
+</html>
