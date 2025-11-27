@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm <a href="https://www.pspx.ru/forum/" target="_blank">in1975</a> 
+<h1 align="center">Hi there, I'm <a href="https://www.pspx.ru/forum/" target="_blank">Abonasser</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">تعديل سوني 3 من متجر Game Pro & Abonasser</h3>
 <h3 align="center">This HEN is a branch (modification) <a href="https://github.com/PS3Xploit/PS3HEN" target="_blank">of this</a></h3>
@@ -6,7 +6,7 @@
   <img alig src="https://archive.org/download/ag-1-10-converted-99/Ag1_10%20%5BConverted%5D99.png" />
 </p>
 
-# При возникновении проблем с HEN - через обозреватель в разделе сеть удалите папку hen (unlink folder), и установите хен заново.
+# عندما تواجه مشكلة مع HEN - من خلال تخطي تعيين تخلص من الورق (إلغاء ربط المجلد)، وتثبيت Не заново.
 
 ## التغييرات في الإصدار 3.4.2
 - إنشاء PS3ISO ومجلدات أخرى عند تغيير القرص الصلب
